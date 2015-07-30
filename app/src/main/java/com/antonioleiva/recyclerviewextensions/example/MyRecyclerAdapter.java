@@ -92,9 +92,9 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
             paletteManager.getPalette(key, bitmap, new PaletteManager.Callback() {
                 @Override
                 public void onPaletteReady(Palette palette) {
-                    int bgColor = palette.getDarkVibrantColor().getRgb();
+                    int bgColor = palette.getDarkVibrantColor(android.R.color.background_light);
                     text.setBackgroundColor(setColorAlpha(bgColor, 192));
-                    text.setTextColor(palette.getLightMutedColor().getRgb());
+                    text.setTextColor(palette.getLightMutedColor(android.R.color.background_light));
                 }
             });
         }

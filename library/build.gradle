@@ -5,15 +5,15 @@ android {
     buildToolsVersion "19.1.0"
 
     defaultConfig {
-        applicationId "com.antonioleiva.recyclerviewextensions"
-        minSdkVersion 'L'
-        targetSdkVersion 'L'
+//        applicationId "com.antonioleiva.recyclerviewextensions"
+        minSdkVersion 9
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

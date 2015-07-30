@@ -1,19 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'android-L'
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc3"
 
     defaultConfig {
-        applicationId "com.antonioleiva.recyclerviewextensions.app"
-        minSdkVersion 'L'
-        targetSdkVersion 'L'
+//        applicationId "com.antonioleiva.recyclerviewextensions.app"
+        minSdkVersion 9
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled  false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
